@@ -12,14 +12,14 @@ gogoDgo is a Bluetooth (BLE) dog tag with an LED display, plus a mobile app and 
 |---|---|
 | **Period** | November 2025 – today |
 | **My role** | Technical co-founder in a team of 4 |
-| **Status** | Website in production. iOS and Android preview builds. BLE protocol and OTA updates validated in simulation. On-device tests with the first hardware prototype are in progress |
+| **Status** | First version of the website online. iOS and Android preview builds. BLE protocol and OTA updates validated in simulation. On-device tests with the first hardware prototype are in progress |
 
 ## My role
 
-- **Product architecture.** I wrote the functional architecture and the V1 scope, and designed the screens in Figma.
+- **Mobile and web.** In a team of four co-founders, I own design and development of the Expo / React Native app and the Next.js website.
 - **Data model.** I designed the PostgreSQL database on Supabase. Owners, dogs and devices are separate entities, protected by row-level security.
-- **Software.** I built the app and the web dashboard connected to the tag prototype: activity history, device status and display settings, Last Seen / Lost. Multilingual content is translated with the OpenAI API.
-- **Coordination.** I am the technical link between hardware, design, marketing and our manufacturing partner in China.
+- **Community features.** I built profiles, the activity feed, the public community space, post creation and private messaging.
+- **Device integration.** I integrated the tag in the mobile app using the Bluetooth protocol supplied by the hardware engineer.
 
 ## Product decisions
 
@@ -27,7 +27,6 @@ gogoDgo is a Bluetooth (BLE) dog tag with an LED display, plus a mobile app and 
 - **Real encounters, mutual friendships.** Tags detect each other nearby. The app notifies both owners, and a friendship exists only when both accept it.
 - **One account, several dogs.** Switching dog never unpairs a device.
 - **Pairing is not ownership.** A connected tag is not a bound tag. Binding, unbinding and transfer are explicit steps.
-- **We don't overstate what the hardware can do.** The tag has no GPS. "Last Seen" uses the phone's location and time, and the app says so.
 
 ## Architecture
 
